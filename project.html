@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script src="project.js"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="navleft">
+        <ul>
+          <a href="index.html">
+            <img src="assets/logo.png" alt="logo" />
+          </a>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="project.html">
+              <h4>My Project</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navright">
+        <a href="contact.html" target="_blank">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- Project -->
+    <!-- Form -->
+    <div class="project-form">
+      <div class="project-container">
+        <h1>ADD MY PROJECT</h1>
+        <form onsubmit="addProject(event)">
+          <div class="title-project">
+            <label for="input-title">Project Name</label>
+            <input type="text" placeholder="Project Name" id="input-title" />
+          </div>
+          <div class="date">
+            <div class="input-date-start">
+              <label for="input-startDate">Start Date</label>
+              <input
+                type="date"
+                placeholder="Start Date"
+                id="input-startDate"
+              />
+            </div>
+            <div class="input-date-end">
+              <label for="input-endDate">End Date</label>
+              <input type="date" placeholder="End Date" id="input-endDate" />
+            </div>
+          </div>
+          <div class="description">
+            <label for="input-description">Description</label>
+            <textarea
+              id="input-description"
+              placeholder="Description"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <p>Technologies</p>
+            <div class="input-checkbox">
+              <div class="checkbox-left">
+                <label class="container-checkbox">
+                  <input type="checkbox" id="input-node" />Node Js
+                  <span class="checkmark"></span>
+                </label>
+                <br />
+                <label class="container-checkbox">
+                  <input type="checkbox" id="input-react" />React Js
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="checkbox-right">
+                <label class="container-checkbox">
+                  <input type="checkbox" id="input-js" />Javascript
+                  <span class="checkmark"></span>
+                </label>
+                <br />
+                <label class="container-checkbox">
+                  <input type="checkbox" id="input-html5" />HTML-5
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="file">
+            <label>Upload Image</label>
+            <div class="input-image-group">
+              <label for="input-image">
+                <p>Choose File..</p>
+                <input type="file" id="input-image" />
+                <i class="fa-solid fa-paperclip"></i>
+              </label>
+            </div>
+          </div>
+          <div class="btn">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Data Project -->
+    <div class="title-list">
+      <h1>MY PROJECT</h1>
+    </div>
+    <div class="project-list" id="listProject">
+      <div class="project-list-item">
+        <div class="project-image">
+          <img src="assets/pic/earth-uranus.jpg" alt="" />
+        </div>
+        <div class="project-content">
+          <h2>
+            <a href="project-detail.html" target="_blank">
+              63 Earths Can Fit Inside Uranus
+            </a>
+          </h2>
+          <div class="duration-project">
+            <p>Duration: <span>1 Month</span></p>
+          </div>
+          <div class="description-project">
+            <p>
+              The joke here starts off with text that says “63 earths can fit
+              inside Uranus.” Now all this is saying is that the planet, Uranus,
+              is 63 times larger than the earth so the earth could be fit into
+              Uranus 63 times.
+            </p>
+          </div>
+          <div class="tech-project">
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="btn-group">
+            <div class="btn-left">
+              <button>Edit</button>
+            </div>
+            <div class="btn-right">
+              <button class="del-btn">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

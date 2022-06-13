@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+  font-family: Arial, sans-serif;
+  font-size: large;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  height: 7vh;
+}
+
+.navleft {
+  display: flex;
+  flex: 50%;
+  padding-left: 100px;
+  align-items: center;
+}
+
+.navleft li {
+  display: inline;
+}
+
+.navleft ul{
+  display: flex;
+  align-items: center;
+}
+
+.navleft ul li a{
+  color: black;
+  text-decoration: none;
+  padding: 15px
+}
+
+.navleft ul li{
+  padding-left: 50px;
+}
+
+.navright{
+  display: flex;
+  align-items: center;
+  padding-right: 100px;
+  justify-content: flex-end;
+}
+
+.navright a{
+  background-color: black;
+  color: rgb(240, 240, 240);
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+/* Project Form */
+.project{
+  height: 93vh;
+}
+
+.project-form{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.project-container{
+  padding: 10px 10px;
+  width: 50%;
+}
+
+.project-form h1{
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+input, textarea, .checkmark, .project-form .project-container .file .input-image-group label{
+  /* box-shadow: 3px 3px 4px whitesmoke; */
+  border: 1px solid rgb(202, 202, 202);
+  padding: 10px;
+}
+
+/* Title */
+.title-project{
+  width: 100%;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.title-project input{
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 4px; 
+}
+
+/* Date */
+.date{
+  display: flex;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.input-date-start{
+  padding-right: 8px;
+  width: 50%;
+}
+
+.input-date-end{
+  padding-left: 8px;
+  width: 50%;
+}
+
+.date input{
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 4px;
+}
+
+/* Description */
+.description{
+  width: 100%;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.description textarea{
+  margin-top: 4px;
+  width: 100%;
+  border-radius: 12px;
+  height: 100px;
+  resize: none;
+}
+
+.checkbox{
+  width: 100%;
+}
+
+.checkbox p{
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+/* Checkbox */
+.input-checkbox{
+  display: flex;
+  width: 35%;
+  margin-bottom: 4px;
+}
+
+.input-checkbox label{
+  display: block;
+  margin-bottom: px;
+}
+
+.checkbox-left{
+  width: 50%;
+}
+
+.checkbox-right{
+  width: 50%;
+}
+
+.input-checkbox .container-checkbox {
+  display:inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: grey;
+  font-size: 12px;
+}
+
+/* Hide the browser's default checkbox */
+.input-checkbox .container-checkbox input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.input-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: rgb(169, 169, 169);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.input-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  
+}
+
+/* Show the checkmark when checked */
+.input-checkbox .container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.input-checkbox .container-checkbox .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid whitesmoke;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+/* Input File */
+.project-form .project-container .file{
+  width: 100%;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.project-form .project-container .file label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.project-form .project-container .file .input-image-group input{
+  width: 100%;
+  display: none;
+}
+
+.project-form .project-container .file .input-image-group label{
+  cursor: pointer;
+  padding: 0 12px 0 0;
+  border-radius: 12px;
+  background-color: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.project-form .project-container .file .input-image-group label p{
+  background-color: rgb(170, 170, 170);
+  color: white;
+  border: 1px;
+  border-radius: 12px 0 0 12px;
+  font-size: 10px;
+  padding: 10px;
+  -webkit-border-radius: 12px 0 0 12px;
+  -moz-border-radius: 12px 0 0 12px;
+  -ms-border-radius: 12px 0 0 12px;
+  -o-border-radius: 12px 0 0 12px;
+}
+
+.project-form .project-container .btn{
+  text-align: right;
+}
+
+.project-form .project-container .btn button{
+  margin-top: 20px;
+  padding: 4px 16px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  border-color: black;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* Project List */
+.title-list{
+  text-align: center;
+  margin: 20px 0px;
+  box-sizing: border-box;
+}
+.project-list{
+  align-items:flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px 20px;
+}
+
+.project-list-item{
+  width: 30%;
+  padding: 15px;
+  margin: 15px;
+  border: 2px solid lightgray;
+  border-radius: 12px;
+}
+
+.project-image{
+  flex: 1;
+}
+
+.project-image img{
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* .project-content{
+  flex: 2;
+} */
+
+.project-content h2 a{
+  text-decoration: none;
+  color: black;
+  padding-bottom: 15px;
+}
+
+.description-project p{
+  padding-top: 10px;
+}
+
+.duration-project{
+  padding-top: 10px;
+}
+
+/* .project-content .description p{
+  word-break: break-all;
+} */
+
+.project-content .tech-project{
+  margin-bottom: 12px;
+}
+
+.project-content .tech-project i{
+  font-size: 17px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.project-content .btn-group{
+  margin-top: 15px;
+  display: flex;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.project-content .btn-group .btn-left{
+  width: 50%;
+  padding-right: 8px;
+}
+
+.project-content .btn-group .btn-right{
+  width: 50%;
+  padding-left: 8px;
+}
+
+.project-content .btn-group button{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 6px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
